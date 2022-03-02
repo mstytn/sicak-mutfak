@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Nerko+One&family=Pacifico&display=swap');
+
+
+body {
+  background-color: #090909;
+  box-sizing: border-box;
+}
+
+#scroller {
+  z-index: 2000;
+  transition: opacity .6s ease;
+}
+
+#brandLogo {
+  width: 80px;
+}
+
+#teaser {
+  height: 80vh;
+  max-height: 60rem;
+  min-height: 35rem;
+  background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5), rgba(0,0,0,1)), url('images/koyu-resim-1.jpg') 1% 40%;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffbf12;
+  font-family: 'Pacifico', cursive;
+  clip-path: polygon(100% 0%, 0% 0% , 0% 97.83%, 1% 97.83%, 2% 97.81%, 3% 97.77%, 4% 97.72%, 5% 97.66%, 6% 97.58%, 7% 97.49%, 8% 97.39%, 9% 97.28%, 10% 97.15%, 11% 97.01%, 12% 96.85%, 13% 96.69%, 14% 96.51%, 15% 96.33%, 16% 96.13%, 17% 95.92%, 18% 95.70%, 19% 95.48%, 20% 95.24%, 21% 95.00%, 22% 94.75%, 23% 94.49%, 24% 94.23%, 25% 93.96%, 26% 93.68%, 27% 93.40%, 28% 93.12%, 29% 92.83%, 30% 92.54%, 31% 92.25%, 32% 91.96%, 33% 91.66%, 34% 91.37%, 35% 91.08%, 36% 90.78%, 37% 90.50%, 38% 90.21%, 39% 89.92%, 40% 89.65%, 41% 89.37%, 42% 89.10%, 43% 88.84%, 44% 88.58%, 45% 88.33%, 46% 88.09%, 47% 87.85%, 48% 87.62%, 49% 87.41%, 50% 87.20%, 51% 87.00%, 52% 86.82%, 53% 86.64%, 54% 86.48%, 55% 86.32%, 56% 86.18%, 57% 86.05%, 58% 85.94%, 59% 85.84%, 60% 85.75%, 61% 85.67%, 62% 85.61%, 63% 85.56%, 64% 85.53%, 65% 85.51%, 66% 85.50%, 67% 85.51%, 68% 85.53%, 69% 85.56%, 70% 85.61%, 71% 85.68%, 72% 85.75%, 73% 85.84%, 74% 85.94%, 75% 86.06%, 76% 86.19%, 77% 86.33%, 78% 86.48%, 79% 86.65%, 80% 86.83%, 81% 87.01%, 82% 87.21%, 83% 87.42%, 84% 87.64%, 85% 87.86%, 86% 88.10%, 87% 88.34%, 88% 88.59%, 89% 88.85%, 90% 89.11%, 91% 89.38%, 92% 89.66%, 93% 89.94%, 94% 90.22%, 95% 90.51%, 96% 90.80%, 97% 91.09%, 98% 91.38%, 99% 91.68%, 100% 91.97%);
+  z-index: 999;
+}
+
+#story {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: -9rem;
+  /* top: -9rem; */
+  background: url('images/wihte-bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 998;
+  clip-path: polygon(100% 0%, 0% 0% , 0% 98.67%, 1% 98.66%, 2% 98.66%, 3% 98.65%, 4% 98.63%, 5% 98.61%, 6% 98.59%, 7% 98.57%, 8% 98.53%, 9% 98.50%, 10% 98.46%, 11% 98.42%, 12% 98.37%, 13% 98.32%, 14% 98.26%, 15% 98.20%, 16% 98.14%, 17% 98.07%, 18% 98.00%, 19% 97.93%, 20% 97.85%, 21% 97.77%, 22% 97.68%, 23% 97.59%, 24% 97.50%, 25% 97.41%, 26% 97.31%, 27% 97.20%, 28% 97.10%, 29% 96.99%, 30% 96.87%, 31% 96.76%, 32% 96.64%, 33% 96.52%, 34% 96.39%, 35% 96.26%, 36% 96.13%, 37% 96.00%, 38% 95.86%, 39% 95.73%, 40% 95.58%, 41% 95.44%, 42% 95.30%, 43% 95.15%, 44% 95.00%, 45% 94.85%, 46% 94.69%, 47% 94.53%, 48% 94.38%, 49% 94.22%, 50% 94.06%, 51% 93.89%, 52% 93.73%, 53% 93.56%, 54% 93.40%, 55% 93.23%, 56% 93.06%, 57% 92.89%, 58% 92.72%, 59% 92.55%, 60% 92.37%, 61% 92.20%, 62% 92.03%, 63% 91.85%, 64% 91.68%, 65% 91.50%, 66% 91.33%, 67% 91.15%, 68% 90.98%, 69% 90.81%, 70% 90.63%, 71% 90.46%, 72% 90.28%, 73% 90.11%, 74% 89.94%, 75% 89.77%, 76% 89.60%, 77% 89.43%, 78% 89.26%, 79% 89.10%, 80% 88.93%, 81% 88.77%, 82% 88.60%, 83% 88.44%, 84% 88.28%, 85% 88.12%, 86% 87.97%, 87% 87.81%, 88% 87.66%, 89% 87.51%, 90% 87.36%, 91% 87.22%, 92% 87.07%, 93% 86.93%, 94% 86.79%, 95% 86.66%, 96% 86.53%, 97% 86.40%, 98% 86.27%, 99% 86.14%, 100% 86.02%);
+}
+
+#story h3 {
+  color: #ffbf12;
+  font-family: 'Pacifico', cursive;
+  font-size: 5rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,.7);
+}
+
+#bir {
+  transform: translateY(60px);
+}
+
+#story a {
+  z-index: 999;
+}
+
+#selected {
+  position: relative;
+  margin-top: -9rem;
+  /* top: -18rem; */
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.5)), url('images/selected.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(100% 0%, 0% 0% , 0% 97.83%, 1% 97.83%, 2% 97.81%, 3% 97.77%, 4% 97.72%, 5% 97.66%, 6% 97.58%, 7% 97.49%, 8% 97.39%, 9% 97.28%, 10% 97.15%, 11% 97.01%, 12% 96.85%, 13% 96.69%, 14% 96.51%, 15% 96.33%, 16% 96.13%, 17% 95.92%, 18% 95.70%, 19% 95.48%, 20% 95.24%, 21% 95.00%, 22% 94.75%, 23% 94.49%, 24% 94.23%, 25% 93.96%, 26% 93.68%, 27% 93.40%, 28% 93.12%, 29% 92.83%, 30% 92.54%, 31% 92.25%, 32% 91.96%, 33% 91.66%, 34% 91.37%, 35% 91.08%, 36% 90.78%, 37% 90.50%, 38% 90.21%, 39% 89.92%, 40% 89.65%, 41% 89.37%, 42% 89.10%, 43% 88.84%, 44% 88.58%, 45% 88.33%, 46% 88.09%, 47% 87.85%, 48% 87.62%, 49% 87.41%, 50% 87.20%, 51% 87.00%, 52% 86.82%, 53% 86.64%, 54% 86.48%, 55% 86.32%, 56% 86.18%, 57% 86.05%, 58% 85.94%, 59% 85.84%, 60% 85.75%, 61% 85.67%, 62% 85.61%, 63% 85.56%, 64% 85.53%, 65% 85.51%, 66% 85.50%, 67% 85.51%, 68% 85.53%, 69% 85.56%, 70% 85.61%, 71% 85.68%, 72% 85.75%, 73% 85.84%, 74% 85.94%, 75% 86.06%, 76% 86.19%, 77% 86.33%, 78% 86.48%, 79% 86.65%, 80% 86.83%, 81% 87.01%, 82% 87.21%, 83% 87.42%, 84% 87.64%, 85% 87.86%, 86% 88.10%, 87% 88.34%, 88% 88.59%, 89% 88.85%, 90% 89.11%, 91% 89.38%, 92% 89.66%, 93% 89.94%, 94% 90.22%, 95% 90.51%, 96% 90.80%, 97% 91.09%, 98% 91.38%, 99% 91.68%, 100% 91.97%);
+  z-index: 997;
+}
+
+#selected h3 {
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 5em;
+  text-shadow: 0 2px 8px rgba(0,0,0,.7);
+}
+
+#rezerv {
+  position: relative;
+  /* top: -30rem; */
+  margin-top: -12rem;
+  padding-top: 10rem;
+  padding-bottom: 18rem;
+  background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url('images/bg-food.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(100% 0%, 0% 0% , 0% 94.17%, 1% 94.14%, 2% 94.05%, 3% 93.91%, 4% 93.72%, 5% 93.47%, 6% 93.19%, 7% 92.86%, 8% 92.51%, 9% 92.13%, 10% 91.73%, 11% 91.33%, 12% 90.93%, 13% 90.53%, 14% 90.15%, 15% 89.80%, 16% 89.48%, 17% 89.19%, 18% 88.95%, 19% 88.75%, 20% 88.61%, 21% 88.53%, 22% 88.50%, 23% 88.53%, 24% 88.62%, 25% 88.76%, 26% 88.95%, 27% 89.19%, 28% 89.48%, 29% 89.81%, 30% 90.16%, 31% 90.54%, 32% 90.94%, 33% 91.34%, 34% 91.74%, 35% 92.14%, 36% 92.52%, 37% 92.87%, 38% 93.19%, 39% 93.48%, 40% 93.72%, 41% 93.91%, 42% 94.05%, 43% 94.14%, 44% 94.17%, 45% 94.14%, 46% 94.05%, 47% 93.91%, 48% 93.71%, 49% 93.47%, 50% 93.18%, 51% 92.86%, 52% 92.50%, 53% 92.12%, 54% 91.73%, 55% 91.32%, 56% 90.92%, 57% 90.53%, 58% 90.15%, 59% 89.79%, 60% 89.47%, 61% 89.19%, 62% 88.94%, 63% 88.75%, 64% 88.61%, 65% 88.53%, 66% 88.50%, 67% 88.53%, 68% 88.62%, 69% 88.76%, 70% 88.96%, 71% 89.20%, 72% 89.49%, 73% 89.81%, 74% 90.17%, 75% 90.55%, 76% 90.94%, 77% 91.35%, 78% 91.75%, 79% 92.14%, 80% 92.52%, 81% 92.88%, 82% 93.20%, 83% 93.48%, 84% 93.72%, 85% 93.92%, 86% 94.06%, 87% 94.14%, 88% 94.17%, 89% 94.14%, 90% 94.05%, 91% 93.90%, 92% 93.71%, 93% 93.46%, 94% 93.18%, 95% 92.85%, 96% 92.50%, 97% 92.12%, 98% 91.72%, 99% 91.32%, 100% 90.91%);
+  z-index: 996;
+}
+
+#contactForm {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+#rezerv h5{
+  color: #ffbf12;
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+}
+
+#footer {
+  position: relative;
+  background-color: black;
+  /* top: -40rem; */
+  margin-top: -10rem;
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #ffbf12;
+  text-decoration: none;
+}
+
+#footer ul {
+  list-style-type: none;
+  padding: 0;
+
+  line-height: 2;
+}
+
+#dun {
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+  z-index: 1021;
+  animation: rotator 60s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotator {
+  from {
+    transform: rotate(0deg);
+  }  
+  to {
+    transform: rotate(360deg);
+  }  
+}
+
+.modal {
+  z-index: 3000;
+}
+
+
+.scroll-to-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  border-radius: 50%;
+  background-color: #ffbf12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 12px rgba(0, 0,0,.2);
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity .6s ease;
+}
+
+.scroll-to-top p {
+  font-size: 2em;
+  transform: translateY(7px);
+}
+
+.scroll-to-top:hover i {
+  color: white;
+}
+
+.scroll-to-top i{
+  color: black;
+}
+
+.not-shown {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.carousel-caption h5 {
+  color: #ffbf12;
+  font-size: 2rem;
+  font-family: 'Pacifico', cursive;
+}
+
+.carousel-item h4 {
+  position: absolute;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 5em;
+  top: 0;
+  right:0;
+  background: radial-gradient(rgb(202, 12, 12), rgb(114, 4, 4));
+  padding: 6rem 2.5rem;
+  border-radius: 20rem;
+  transform: scale(.5) translateY(-8rem);
+  box-shadow: -25px 25px 25px rgba(0,0,0,.8), 0 0 10px 3px red;
+  text-shadow: 3px 3px 5px rgba(0,0,0,.8);
+  overflow: hidden;
+  animation: rotit 2s ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@media screen and (max-width: 600px){
+  .carousel-item h4 {
+    top: 0;
+    right:0;
+    font-size: 3em;
+    padding: 3rem 1.2rem;
+    transform: scale(.5) translateY(0);
+    animation: none;
+  }
+}
+
+@keyframes rotit{
+  0% {
+    transform: scale(.48) translateY(-8rem);
+  }
+  50% {
+    transform: scale(.52) translateY(-8rem);
+  }
+  100% {
+    transform: scale(.48) translateY(-8rem);
+  }
+}
