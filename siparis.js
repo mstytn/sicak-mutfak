@@ -308,7 +308,6 @@ const lc = new listConstructor(u, 'urunSonuc')
 // LOAD EVENT KANCASI
 window.addEventListener('load', (_ev) => {
   const cred = new UserCredentials()
-
   cred.getUser().then(usr => {
     updateUserNav(usr)
   })
@@ -316,3 +315,5 @@ window.addEventListener('load', (_ev) => {
   // Açılışta boş arama başlat
   lc.searchFunction(lc,{srcElement: {value: ''}}) 
 })
+
+
