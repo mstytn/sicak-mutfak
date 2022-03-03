@@ -16,15 +16,21 @@ const getAnchorPoses = (anchorNames) => {
 }
 
 const marker = (navToActivate) => {
-  console.log(navToActivate)
   const navItems = document.querySelectorAll('.nav-link')
   const navItemToActive = document.getElementById(navToActivate)
-  console.log(navItemToActive)
   navItems.forEach(navItem => navItem.classList.remove('active'))
   navItemToActive.classList.add('active')
 }
 
+const addTooltipTottClasses = () => {
+  const toolTips = document.querySelectorAll('.tt')
+  toolTips.forEach(t => {
+    new bootstrap.Tooltip(t)
+  })
+}
+
 window.addEventListener('load', (ev) => {
+  addTooltipTottClasses()
 
   let ancPoses = getAnchorPoses(anchors)
   window.addEventListener('resize', ev => {
