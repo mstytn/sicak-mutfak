@@ -215,14 +215,15 @@ class listConstructor {
     row.classList.add
     (
       'row', 
-      'justify-content-center', 
+      'justify-content-between', 
+      'justify-content-sm-center',
       'align-items-center',
       'mt-3',
       'mt-md-0'
     )
 
     const col1 = document.createElement('div')
-    col1.classList.add('col-2')
+    col1.classList.add('col-2', 'd-none', 'd-sm-block')
     const img = document.createElement('img')
     img.classList.add('img-fluid', 'p-md-3')
     img.alt = src.ad
@@ -230,7 +231,7 @@ class listConstructor {
     col1.appendChild(img)
 
     const col2 = document.createElement('div')
-    col2.classList.add('col-4', 'col-md-5')
+    col2.classList.add('col-sm-4', 'col-12', 'col-md-5')
     const head = document.createElement('h3')
     head.textContent = src.ad
     const detail = document.createElement('p')
@@ -239,13 +240,13 @@ class listConstructor {
     col2.appendChild(detail)
 
     const col3 = document.createElement('div')
-    col3.classList.add('col-3', 'col-md-2')
+    col3.classList.add('col-sm-3', 'col-6' ,'col-md-2')
     const money = document.createElement('h4')
     money.textContent = `${src.fiyat.toFixed(2)}₺`
     col3.appendChild(money)
 
     const col4 = document.createElement('div')
-    col4.classList.add('col-1')
+    col4.classList.add('col-sm-1', 'col-12', 'my-sm-0', 'my-1')
     const btn = document.createElement('button')
     btn.classList.add('btn', 'btn-danger')
     const cart = document.createElement('i')
