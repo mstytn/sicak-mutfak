@@ -293,7 +293,7 @@ class UserCredentials {
 const updateUserNav = (user) => {
   const nameField = document.getElementById('visitor')
   const imageField = document.getElementById('usrImage')
-  nameField.innerText = `Merhaba ${user.first}`
+  nameField.innerText = `${user.first} ${user.last}`
   imageField.src = user.thumbnail
 }
 
