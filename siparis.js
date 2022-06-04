@@ -267,8 +267,8 @@ class listConstructor {
 class UserCredentials {
   constructor() {
     this.userDummy = {
-      first: "Ziyaretçi",
-      last: "Bilinmeyen",
+      first: "Abuzittin",
+      last: "Yıldırım",
       title: "M",
       thumbnail: "images/defaultDuumy.png"
     }
