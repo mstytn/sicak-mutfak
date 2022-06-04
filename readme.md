@@ -1,5 +1,7 @@
 # ***Sıcak Mutfak***: İsmek Front-End Developer kursu için **bootstrap** sayfa çalışması
 
+[Live Preview Of `static` Branch: Önizleme](https://mstytn.github.io/sicak-mutfak/)
+
 Varsayılan Dal, bu proje için `static`tir. Modüler versiyonu `main` dalda tuttum. Bu site ilk olarak Modüler ES6 ile yazılmıştır. Ancak `file://` sistemiyle uyumlu hale getirmek için statik ES6 sözdizimine değiştirilir. Modüller tek bir `.js` dosyasına entegre edildi. Modüler versiyona bir göz atmak için dalı `main` olarak değiştirin. Ancak geliştirme süreci `static` dalda devam ettiği için güncel olmayabilir.
 
 *Default Branch is `static` for this project. I've kept the modular version on `main` branch. This site was firstly written in ES6 Modular. But to make compatible with `file://` system it is changed to static ES6 syntax. Modules were integrated into one `.js` file. To take a look at modular version change branch to `main`. But it could be outdated, because the development process continued on `static` branch.*
